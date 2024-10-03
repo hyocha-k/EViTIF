@@ -3,11 +3,11 @@ Pytorch reimplementation of [Google's repository for the ViT model](https://gith
 
 This paper show that Transformers applied directly to image patches and pre-trained on large datasets work really well on image recognition task.
 
-![fig1](./img/figure1.png)
+![fig1](./img/EViTIF_framework.png)
 
 Vision Transformer achieve State-of-the-Art in image recognition task with standard Transformer encoder and fixed-size patches. In order to perform classification, author use the standard approach of adding an extra learnable "classification token" to the sequence.
 
-![fig2](./img/figure2.png)
+
 
 
 ## Usage
