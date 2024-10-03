@@ -57,4 +57,4 @@ python3 train.py --name cifar10-100_500 --dataset cifar10 --model_type ViT-B_16 
   year={2020}
 }
 ```
-# EViTIF
+
