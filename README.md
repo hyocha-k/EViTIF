@@ -42,6 +42,13 @@ python3 train.py --name cifar10-100_500 --dataset cifar10 --model_type ViT-B_16 
 ```
 
 
+### 2. Inference Model
+```
+CUDA_VISIBLE_DEVICES=0 python inference_patch_udp_loss_channel_filter_freeze_other_param_02_packet_loss_adaptive_weight_modi_lr_mmt.py --dataset cifar100 --pretrained_model_path pretrained_checkpoint.bin --batch_size 128 --packet_loss_rate 60 --num_image 1
+```
+The default batch size is 512. When GPU memory is insufficient, you can proceed with training by adjusting the value of `--gradient_accumulation_steps`.
+
+
 ## Reference
 * [Google ViT](https://github.com/google-research/vision_transformer)
 * [Pytorch Image Models(timm)](https://github.com/rwightman/pytorch-image-models)
